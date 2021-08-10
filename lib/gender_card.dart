@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'constants.dart';
+
 class GenderCard extends StatelessWidget {
   final String label;
   final IconData icon;
@@ -20,10 +22,7 @@ class GenderCard extends StatelessWidget {
         ),
         Text(
           label,
-          style: TextStyle(
-            fontSize: 23.0,
-            color: Color(0xFF8D8E98),
-          ),
+          style: kLabelTextStyle,
         ),
       ],
     );

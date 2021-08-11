@@ -148,12 +148,22 @@ class _InputPageState extends State<InputPage> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: <Widget>[
                               RoundIconButton(
+                                onPressed: () {
+                                  setState(() {
+                                    weight--;
+                                  });
+                                },
                                 icon: FontAwesomeIcons.minus,
                               ),
                               SizedBox(
                                 width: 15.0,
                               ),
                               RoundIconButton(
+                                onPressed: () {
+                                  setState(() {
+                                    weight++;
+                                  });
+                                },
                                 icon: FontAwesomeIcons.plus,
                               ),
                             ],

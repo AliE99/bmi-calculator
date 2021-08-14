@@ -1,6 +1,8 @@
+import 'package:bmi_calculator/screens/results_page.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+import '../calculator_brain.dart';
 import '../components/bottom_button.dart';
 import '../components/gender_card.dart';
 import '../components/reusable_card.dart';
@@ -222,9 +224,18 @@ class _InputPageState extends State<InputPage> {
             BottomButton(
               label: 'CALCULATE',
               onTap: () {
-                Navigator.pushNamed(
+                CalculatorBrain calc =
+                    CalculatorBrain(height: height, weight: weight);
+
+                Navigator.push(
                   context,
-                  '/resultsPage',
+                  MaterialPageRoute(
+                    builder: (context) => ResultsPage(
+                      bmiResult: calc.calculateBMI(),
+                      resultText: calc.getResult(),
+                      interpretation: calc.getInterpretation(),
+                    ),
+                  ),
                 );
               },
             )

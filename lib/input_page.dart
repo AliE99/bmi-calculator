@@ -218,11 +218,25 @@ class _InputPageState extends State<InputPage> {
                 ],
               ),
             ),
-            Container(
-              color: kBottomContainerColor,
-              height: kBottomContainerWidth,
-              width: double.infinity,
-              margin: EdgeInsets.only(top: 10.0),
+            GestureDetector(
+              onTap: () {
+                Navigator.pushNamed(
+                  context,
+                  '/resultsPage',
+                );
+              },
+              child: Container(
+                child: Center(
+                  child: Text(
+                    'CALCULATE',
+                    style: kLargeButtonTextStyle,
+                  ),
+                ),
+                color: kBottomContainerColor,
+                height: kBottomContainerWidth,
+                width: double.infinity,
+                margin: EdgeInsets.only(top: 10.0),
+              ),
             )
           ],
         ));

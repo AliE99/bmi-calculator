@@ -36,6 +36,7 @@ class _InputPageState extends State<InputPage> {
         ),
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             Expanded(
               child: Row(

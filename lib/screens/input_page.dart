@@ -1,5 +1,6 @@
 import 'package:bmi_calculator/screens/results_page.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../calculator_brain.dart';
@@ -29,7 +30,8 @@ class _InputPageState extends State<InputPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          brightness: Brightness.dark,
+          systemOverlayStyle: SystemUiOverlayStyle.light,
+          backgroundColor: Color(0xFF0A0E21),
           title: Center(
             child: Text('BMI CALCULATOR'),
           ),

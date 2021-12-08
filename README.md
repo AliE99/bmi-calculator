@@ -31,6 +31,6 @@ Input screen
 ![input screen](https://github.com/AliE99/bmi-calculator/blob/master/input.jpg?raw=true)
 
 Output screen
-![output screen](https://github.com/AliE99/bmi-calculator/blob/master/output.jpg?raw=true)
+![output screen](https://github.com/AliE99/bmi-calculator/blob/master/result.jpg?raw=true)
 
 I will be happy to answer any questions that you may have on this project <alielahi.1378@gmail.com>
